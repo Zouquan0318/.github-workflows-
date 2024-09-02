@@ -1,7 +1,7 @@
 name: Run Calculator Script
 
-on: [push, pull_request]  # 触发条件，这里设置为在push和pull_request时触发
-
+on:
+  workflow_dispatch
 jobs:
   build:
     runs-on: windows-latest  # 指定运行环境为最新的Windows
